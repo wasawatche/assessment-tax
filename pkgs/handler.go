@@ -7,7 +7,7 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-func calTaxHandlers(c echo.Context) error {
+func taxHandlers(c echo.Context) error {
 	t := Tax{}
 	err := c.Bind(&t)
 	if err != nil {
